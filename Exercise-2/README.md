@@ -11,15 +11,15 @@ Here's a brief summary of how to get setup for the exercise:
 2. Make sure you have all the dependencies resolved by using the rosdep install tool and run `catkin_make`:  
 
 ```sh
-$ cd ~/catkin_ws
+$ cd ~/perception_exercises
 $ rosdep install --from-paths src --ignore-src --rosdistro=kinetic -y
 $ catkin_make
 ```
 3. Add following to your .bashrc file
 ```
-export GAZEBO_MODEL_PATH=~/catkin_ws/src/sensor_stick/models
+export GAZEBO_MODEL_PATH=~/perception_exercises/src/sensor_stick/models
 
-source ~/catkin_ws/devel/setup.bash
+source ~/perception_exercises/devel/setup.bash
 ```
 
 4. Test the simulation setup by launching the gazebo environment. The command stated below will open a gazebo world along with an rviz window. Play around with it and get familiar with different topics being published to.
